@@ -1,0 +1,63 @@
+<mat-toolbar></mat-toolbar>
+<div fxLayout="column" fxLayoutAlign="center center">
+
+   <mat-card>
+   
+   <form [formGroup]="registerForm" (ngSubmit)="submit()">
+    <div fxLayout="column"  fxLayoutAlign="center center" style="margin-top:2em;">
+    <div fxLayout="row" fxLayoutAlign="center">
+      <mat-form-field>
+          <input matInput placeholder="Name" formControlName="name" required>
+
+      </mat-form-field>
+
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center">
+    <mat-form-field>
+        <input matInput placeholder="Email Adress" formControlName="email" required>
+
+    </mat-form-field>
+
+</div>
+<div fxLayout="row" fxLayoutAlign="center">
+  <mat-form-field>
+      <input matInput type="date" placeholder="Birth Date" formControlName="birthdate" required>
+
+  </mat-form-field>
+
+</div>
+<div fxLayout="row" fxLayoutAlign="center">
+  <mat-form-field>
+      <input matInput placeholder="Mobile Number" formControlName="phoneno" required>
+
+  </mat-form-field>
+
+</div>
+<div fxLayout="row" fxLayoutAlign="center">
+  <mat-form-field>
+    <mat-label>Gender</mat-label>
+    <mat-select  formControlName="gender">
+    <mat-option value="Male">Male</mat-option>
+    <mat-option value="Female">Female</mat-option>
+  </mat-select>
+
+  </mat-form-field>
+
+</div>
+<div fxLayout="row" fxLayoutAlign="center">
+  <mat-form-field>
+      <input matInput placeholder="Adress" formControlName="address" required>
+
+  </mat-form-field>
+
+</div>
+<div fxLayout="row" fxLayoutAlign="center">
+  <button mat-raised-button color="primary" type="submit" >Submit</button>
+</div>
+</div>
+</form>
+
+</mat-card>
+  
+ 
+</div>
